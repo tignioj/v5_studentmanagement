@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1024.0" styleClass="rootPane" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.tignioj.studentmanagement.gui.view.changepwd.ChangePwdView"
+>
+   <top>
+      <HBox prefHeight="54.0" prefWidth="1024.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" prefHeight="54.0" prefWidth="233.0" text="更改密码">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Region layoutX="390.0" layoutY="10.0" prefHeight="54.0" prefWidth="50.0" />
+            <Region prefHeight="54.0" prefWidth="66.0" />
+         </children>
+      </HBox>
+   </top>
+   <bottom>
+      <HBox prefHeight="54.0" prefWidth="1024.0" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets bottom="20.0" top="20.0" />
+         </BorderPane.margin>
+         <children>
+            <Region prefHeight="54.0" prefWidth="810.0" />
+            <JFXButton buttonType="RAISED" onAction="#goWelcome" prefHeight="54.0" prefWidth="198.0" style="-fx-background-color: #42a4f4;" text="返回主页" textFill="WHITE">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </HBox>
+   </bottom>
+   <center>
+      <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <JFXTextField fx:id="oldIn" layoutX="439.0" layoutY="97.0">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="newIn" layoutX="439.0" layoutY="267.0">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </JFXTextField>
+            <Label layoutX="224.0" layoutY="117.0" prefHeight="45.0" prefWidth="208.0" text="输入旧密码">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Label>
+            <Label layoutX="224.0" layoutY="287.0" prefHeight="45.0" prefWidth="208.0" text="输入新密码">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Label>
+            <JFXButton buttonType="RAISED" layoutX="284.0" layoutY="429.0" onAction="#saveBtnClick" prefHeight="123.0" prefWidth="456.0" style="-fx-background-color: #42a4f4;" text="保存修改" textFill="WHITE">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </Pane>
+   </center>
+</BorderPane>

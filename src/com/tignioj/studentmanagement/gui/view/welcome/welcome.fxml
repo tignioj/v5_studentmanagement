@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXProgressBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="768.0" prefWidth="1024.0" styleClass="rootPane" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.tignioj.studentmanagement.gui.view.welcome.Welcome">
+   <children>
+      <Pane layoutX="14.0" layoutY="10.0" prefHeight="672.0" prefWidth="969.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="26.0" AnchorPane.topAnchor="10.0">
+         <children>
+            <Label layoutX="377.0" layoutY="27.0" prefHeight="45.0" prefWidth="342.0" text="欢迎 张三 ，请选择操作">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Label>
+            <JFXButton buttonType="RAISED" layoutX="40.0" layoutY="99.0" onAction="#gostumanage" prefHeight="124.0" prefWidth="398.0" style="-fx-background-color: #42a4f4;" text="学籍管理" textFill="WHITE">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="47.0" layoutY="306.0" onAction="#goGrade" prefHeight="124.0" prefWidth="398.0" style="-fx-background-color: #42a4f4;" text="成绩管理" textFill="WHITE">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="47.0" layoutY="506.0" onAction="#goGraduate" prefHeight="124.0" prefWidth="398.0" style="-fx-background-color: #42a4f4;" text="毕业查询" textFill="WHITE">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="548.0" layoutY="99.0" onAction="#exitSystem" prefHeight="124.0" prefWidth="398.0" style="-fx-background-color: #42a4f4;" text="退出系统" textFill="WHITE">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="548.0" layoutY="298.0" onAction="#goLogin" prefHeight="124.0" prefWidth="398.0" style="-fx-background-color: #42a4f4;" text="返回登录" textFill="WHITE">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="548.0" layoutY="506.0" onAction="#goChangePassword" prefHeight="124.0" prefWidth="398.0" style="-fx-background-color: #42a4f4;" text="修改密码" textFill="WHITE">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </JFXButton>
+            <JFXProgressBar fx:id="progressBar" layoutX="14.0" layoutY="691.0" prefWidth="959.0" />
+            <Label fx:id="textLoadTip" alignment="CENTER" contentDisplay="CENTER" layoutX="14.0" layoutY="703.0" prefHeight="31.0" prefWidth="959.0" text="数据加载中">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,11 @@
+#rootPane {
+    /*-fx-background-color: rgba(255, 254, 246, 1);*/
+    -fx-border-radius: 20;
+}
+
+#loginPane {
+    -fx-background-radius: 20;
+    -fx-padding: 30,30,30,30;
+    -fx-background-color: rgba(255, 254, 246, 0.98);
+}
+

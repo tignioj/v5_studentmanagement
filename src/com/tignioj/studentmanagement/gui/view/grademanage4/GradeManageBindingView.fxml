@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1024.0" styleClass="rootPane" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.tignioj.studentmanagement.gui.view.grademanage4.StuGradeController">
+   <center>
+      <JFXTreeTableView fx:id="stuGradeTable" onMouseClicked="#treeTableviewClicked" onMousePressed="#mousePressed" style="-fx-background-color: #ffffff;" BorderPane.alignment="CENTER">
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </JFXTreeTableView>
+   </center>
+   <top>
+      <HBox prefHeight="54.0" prefWidth="1024.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" prefHeight="54.0" prefWidth="96.0" text="过滤器">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Region layoutX="390.0" layoutY="10.0" prefHeight="54.0" prefWidth="50.0" />
+            <Label alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="54.0" prefWidth="69.0" text="学号：">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="filterStuNumIn" prefHeight="44.0" prefWidth="179.0">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </JFXTextField>
+            <Label alignment="CENTER" layoutX="416.0" layoutY="10.0" prefHeight="54.0" prefWidth="69.0" text="年度：">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="filterYearIn" layoutX="486.0" layoutY="10.0" prefHeight="44.0" prefWidth="107.0">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </JFXTextField>
+            <Region layoutX="570.0" layoutY="10.0" prefHeight="54.0" prefWidth="27.0" />
+            <Label alignment="CENTER" layoutX="593.0" layoutY="10.0" prefHeight="54.0" prefWidth="69.0" text="学期：">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <JFXComboBox fx:id="filterTermComboBox" prefHeight="44.0" prefWidth="110.0" style="-fx-font-size: 20;" />
+            <Region prefHeight="54.0" prefWidth="66.0" />
+            <JFXButton fx:id="cleanFilterBtn" prefHeight="54.0" prefWidth="154.0" text="清空过滤器">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </HBox>
+   </top>
+   <bottom>
+      <HBox prefHeight="54.0" prefWidth="1024.0" BorderPane.alignment="CENTER">
+         <children>
+            <JFXButton buttonType="RAISED" onAction="#addGrade" prefHeight="54.0" prefWidth="54.0" style="-fx-background-radius: 50; -fx-border-radius: 100; -fx-background-color: #42a4f4;" textOverrun="CLIP">
+               <font>
+                  <Font size="1.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="20.0" />
+               </HBox.margin>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <graphic>
+                  <ImageView fitHeight="34.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@baseline_add_black_48dp.png" />
+                     </image>
+                     <effect>
+                        <ColorAdjust brightness="1.0" contrast="1.0" hue="1.0" saturation="1.0" />
+                     </effect>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <Region layoutX="390.0" layoutY="10.0" prefHeight="54.0" prefWidth="22.0" />
+            <Label alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="54.0" prefWidth="49.0" text="学号:">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="addStuNumIn" prefHeight="44.0" prefWidth="131.0">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </JFXTextField>
+            <Region layoutX="366.0" layoutY="10.0" prefHeight="54.0" prefWidth="13.0" />
+            <Label alignment="CENTER" layoutX="416.0" layoutY="10.0" prefHeight="54.0" prefWidth="52.0" text="年份:">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="addYearIn" layoutX="486.0" layoutY="10.0" prefHeight="44.0" prefWidth="96.0">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </JFXTextField>
+            <Region layoutX="570.0" layoutY="10.0" prefHeight="54.0" prefWidth="18.0" />
+            <Label alignment="CENTER" layoutX="593.0" layoutY="10.0" prefHeight="54.0" prefWidth="62.0" text="学期:">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <JFXComboBox fx:id="addTermComboBox" prefHeight="44.0" prefWidth="106.0" style="-fx-font-size: 20;" />
+            <Region layoutX="514.0" layoutY="10.0" prefHeight="54.0" prefWidth="20.0" />
+            <Label alignment="CENTER" layoutX="411.0" layoutY="10.0" prefHeight="54.0" prefWidth="53.0" text="成绩:">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="addGradeIn" layoutX="480.0" layoutY="10.0" prefHeight="44.0" prefWidth="97.0">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </JFXTextField>
+            <Region prefHeight="54.0" prefWidth="10.0" />
+            <JFXButton buttonType="RAISED" onAction="#goWelcome" prefHeight="54.0" prefWidth="198.0" style="-fx-background-color: #42a4f4;" text="返回主页" textFill="WHITE">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </JFXButton>
+         </children>
+         <BorderPane.margin>
+            <Insets bottom="20.0" top="20.0" />
+         </BorderPane.margin>
+      </HBox>
+   </bottom>
+</BorderPane>

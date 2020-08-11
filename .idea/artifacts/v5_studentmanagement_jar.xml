@@ -1,0 +1,11 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="v5_studentmanagement:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/v5_studentmanagement_jar</output-path>
+    <root id="archive" name="v5_studentmanagement.jar">
+      <element id="module-output" name="v5_studentmanagement" />
+      <element id="library" level="application" name="myUtuils" />
+      <element id="library" level="application" name="mysql-connector-java-5.1.6" />
+      <element id="library" level="application" name="jfoenix-8.0.8" />
+    </root>
+  </artifact>
+</component>

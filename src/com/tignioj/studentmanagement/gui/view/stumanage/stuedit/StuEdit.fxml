@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane prefHeight="768.0" prefWidth="1024.0" style="-fx-background-color: #E8EAF6;" styleClass="rootPane" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.tignioj.studentmanagement.gui.view.stumanage.stuedit.StuEdit">
+   <bottom>
+      <ButtonBar prefHeight="62.0" prefWidth="1075.0" BorderPane.alignment="CENTER">
+         <buttons>
+            <JFXButton buttonType="RAISED" layoutX="31.0" layoutY="10.0" onAction="#delBtnClicked" prefHeight="82.0" prefWidth="118.0" style="-fx-background-color: #42a4f4;" text="删除学籍" textFill="WHITE">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="saveBtn" buttonType="RAISED" layoutX="612.0" layoutY="10.0" onAction="#saveBtnClicked" prefHeight="82.0" prefWidth="118.0" style="-fx-background-color: #42a4f4;" text="保存" textFill="WHITE">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </JFXButton>
+            <Region prefHeight="39.0" prefWidth="386.0" />
+            <JFXButton buttonType="RAISED" layoutX="901.0" layoutY="10.0" onAction="#goList" prefHeight="75.0" prefWidth="118.0" style="-fx-background-color: #42a4f4;" text="返回列表" textFill="WHITE">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="869.0" layoutY="10.0" onAction="#goWelcome" prefHeight="81.0" prefWidth="118.0" style="-fx-background-color: #42a4f4;" text="返回主页" textFill="WHITE">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </JFXButton>
+         </buttons>
+         <BorderPane.margin>
+            <Insets bottom="15.0" top="5.0" />
+         </BorderPane.margin>
+         <padding>
+            <Insets right="20.0" />
+         </padding>
+      </ButtonBar>
+   </bottom>
+   <center>
+      <fx:include fx:id="oneStuInfo" source="../../../component/stuinfomanage/oneStuinfo/OneStuInfo.fxml" />
+   </center>
+</BorderPane>
